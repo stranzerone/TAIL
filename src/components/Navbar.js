@@ -7,11 +7,13 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [avatar, setAvatar] = useState('');
 const {userid} = useParams()
+const BACKEND_URL= process.env.REACT_APP_BACKEND
+
   useEffect(() => {
     // Fetch avatar image from localhost:4000
     const fetchAvatar = async () => {
       try {
-        const response = await axios.get(`http://localhost:4000/avatar/${userid}`);
+        const response = await axios.get(`${BACKEND_URL}/avatar/${userid}`);
         setAvatar(response.data.data[0].image);
       } catch (error) {
         console.error('Error fetching avatar:', error);
