@@ -6,7 +6,7 @@ import VerifyEmailPage from "./components/VerifyEmail";
 
 function App() {
   return (
-    <div>
+    <div >
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/profile/:userid" element={<Profile />} />

@@ -67,8 +67,15 @@ if(response.status===200){
             <div 
               className={`flex flex-col items-center justify-center w-full sm:w-1/3 rounded-lg min-w-[200px] h-full border-2 ${isChecked.option1 ? 'border-red-500' : 'border-gray-200'}`}
               onClick={() => handleCheckboxChange('option1')}
+              style={{height:"44vh"}}
+
             >
-              <img src={A1} alt="Loading" className="w-full h-24 object-contain mb-2" />
+            <div className='h-2/4 w-1/2 '>
+              <img src={A1} alt="Loading" className="w-full h-full object-cover mb-2" />
+             </div>
+             <div className='h-2/4 w-full items-center flex flex-col justify-end'>
+
+
               <h2 className="text-center">I'am a designer looking to share my work</h2>
               <input 
                 type="checkbox" 
@@ -76,27 +83,42 @@ if(response.status===200){
                 checked={isChecked.option1}
                 onChange={() => handleCheckboxChange('option1')}
               />
+              </div>
             </div>
             <div 
-              className={`flex flex-col items-center justify-center w-full sm:w-1/3 rounded-lg min-w-[200px] h-auto border-2 ${isChecked.option2 ? 'border-red-500' : 'border-gray-200'}`}
+             className={`flex flex-col items-center justify-center w-full sm:w-1/3 rounded-lg min-w-[200px] h-full border-2 ${isChecked.option1 ? 'border-red-500' : 'border-gray-200'}`}
+style={{height:"44vh"}}
               onClick={() => handleCheckboxChange('option2')}
             >
+            <div className='h-2/4 w-1/2 '>
               <img src={A2}
-              alt="Loading" className="w-full h-24 object-contain mb-2" />
-              <h2 className="text-center">I'am looking to hire a designer</h2>
+              alt="Loading" className="w-full h-full object-cover mb-2" />
+              </div>
+
+              <div className='h-2/4 w-full items-center flex flex-col justify-end'>
+              <h2 className="  flex text-center py-4">I'am looking to hire a designer</h2>
               <input 
                 type="checkbox" 
-                className="m-3 appearance-none bg-white rounded-full w-6 h-6 border-2 border-gray-200 checked:bg-pink-500" 
+                className="m-3 appearance-none bg-white rounded-full w-6 h-6 border-2 border-gray-200 checked:bg-pink-500 " 
                 checked={isChecked.option2}
                 onChange={() => handleCheckboxChange('option2')}
               />
+
+              </div>
             </div>
             <div 
-              className={`flex flex-col items-center justify-center w-full sm:w-1/3 rounded-lg min-w-[200px] h-full border-2 ${isChecked.option3 ? 'border-red-500' : 'border-gray-200'}`}
+              className={`flex flex-col items-center justify-center w-full sm:w-1/3 rounded-lg min-w-[200px] h-full border-2 ${isChecked.option1 ? 'border-red-500' : 'border-gray-200'}`}
               onClick={() => handleCheckboxChange('option3')}
+              style={{height:"44vh"}}
+
             >
+            <div className='h-2/4 w-1/2 '>
               <img src={A3}
-               alt="Option 3" className="w-full h-24 object-cover mb-2" />
+               alt="Option 3" className="w-full h-full  object-cover mb-2" />
+               </div>
+
+
+               <div className='h-2/4 w-full items-center flex flex-col justify-end'>
               <h2 className="text-center">I'am looking for design inspiration</h2>
               <input 
                 type="checkbox" 
@@ -104,6 +126,7 @@ if(response.status===200){
                 checked={isChecked.option3}
                 onChange={() => handleCheckboxChange('option3')}
               />
+              </div>
             </div>
           </div>
 

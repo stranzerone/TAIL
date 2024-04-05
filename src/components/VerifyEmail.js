@@ -13,9 +13,9 @@ const VerifyEmailPage = () => {
       {/* Main Content */}
       <div className="flex-grow flex items-center justify-center">
         <div className="text-center">
-          <h2 className="text-3xl font-bold mb-4">Please verify Your Email...</h2>
+          <h2 className="text-5vw font-bold mb-4">Please verify Your Email...</h2>
 <div className='flex items-center justify-center'>
-  <LuMailCheck className='my-10  '   style={{height:"15vw" ,width:"10rem"}}/>
+  <LuMailCheck className='py-3'   style={{height:"25vw" ,width:"20vw"}}/>
 </div>
        <h3 className='text-gray-500'>Please verify email address.We've sent a confirmation email to:
        <br />

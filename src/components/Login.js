@@ -56,8 +56,8 @@ const [usernameTaken,setUsernameTaken] =useState(false)
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
-      <div className="w-full max-w-full md:max-w-screen-xl bg-white rounded-lg shadow-lg overflow-hidden">
+    <div className="min-h-full flex bg-red-300 flex-col items-center justify-center bg-gray-100 w-full">
+      <div className="w-full  max-w-full md:max-w-screen bg-white rounded-lg shadow-lg overflow-hidden" style={{height:"100vh"}}>
       
         <div className="grid grid-cols-1 md:grid-cols-2 w-full">
           {/* Left Image */}
@@ -70,8 +70,8 @@ const [usernameTaken,setUsernameTaken] =useState(false)
           </div>
 
           {/* Login Form */}
-          <div className="p-6 md:p-8 flex flex-col justify-center w-full relative">
-            <h1 className="text-xl md:text-2xl my-5 font-semibold mb-3">Sign Up to Dribble</h1>
+          <div className="p-6 md:p-8 flex flex-col justify-center  w-full relative">
+            <h1 className="text-xl md:text-2xl  my-5 font-semibold mb-3">Sign Up to Dribble</h1>
        {usernameTaken?   <p className="text-red-500 mb-3 text-xs md:text-sm">* Username is already taken</p>:<p></p>  }
 
             {/* Already a Member - Top Right Corner */}
