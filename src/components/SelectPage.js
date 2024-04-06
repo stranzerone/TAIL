@@ -86,7 +86,7 @@ if(response.status===200){
               </div>
             </div>
             <div 
-             className={`flex flex-col items-center justify-center w-full sm:w-1/3 rounded-lg min-w-[200px] h-full border-2 ${isChecked.option1 ? 'border-red-500' : 'border-gray-200'}`}
+             className={`flex flex-col items-center justify-center w-full sm:w-1/3 rounded-lg min-w-[200px] h-full border-2 ${isChecked.option2 ? 'border-red-500' : 'border-gray-200'}`}
 style={{height:"44vh"}}
               onClick={() => handleCheckboxChange('option2')}
             >
@@ -107,7 +107,7 @@ style={{height:"44vh"}}
               </div>
             </div>
             <div 
-              className={`flex flex-col items-center justify-center w-full sm:w-1/3 rounded-lg min-w-[200px] h-full border-2 ${isChecked.option1 ? 'border-red-500' : 'border-gray-200'}`}
+              className={`flex flex-col items-center justify-center w-full sm:w-1/3 rounded-lg min-w-[200px] h-full border-2 ${isChecked.option3 ? 'border-red-500' : 'border-gray-200'}`}
               onClick={() => handleCheckboxChange('option3')}
               style={{height:"44vh"}}
 
